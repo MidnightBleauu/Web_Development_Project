@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Pramit Patel</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"> 
+
+</head>
+<body>
+    <header>
+        <h1>
+            Pramit Patel
+             <img src="android-chrome-192x192.png" alt="Favicon" class="favicon">
+        </h1>
+        <p>Simple node app that uses a Public folder with Javascript, HTML and CSS</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="contact.html">Contact</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="order.html">Products</a>
+
+    </nav>
+
+    <main>
+        <section> 
+            <h2>Contact</h2>
+            <article>
+                <p>Please fill out this form to keep in touch with us.</p>
+                <fieldset> 
+                <p>* Required</p>
+                <form id="contactinfoForm" action="/results" method="POST">
+                    <label class="required" for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="First Name & Last Name">
+
+                    <label class="required" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Example@host.com">
+
+                    <label class="required" for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" required placeholder="Enter your feedback: Max 350 words"></textarea>
+                </fieldset>
+            </article>
+
+            <article>
+                <h2>Feedback Options</h2>
+                <p>Please provide your ratings below:</p>
+                <fieldset>
+                    <legend>Were the concepts easy to understand ?</legend>
+                    <label>
+                        <input type="radio" name="comprehensionRating" value="1" required> 1 (Really Difficult)
+                    </label>
+                    <label>
+                        <input type="radio" name="comprehensionRating" value="2" required> 2
+                    </label>
+                    <label>
+                        <input type="radio" name="comprehensionRating" value="3" required> 3
+                    </label>
+                    <label>
+                        <input type="radio" name="comprehensionRating" value="4" required> 4
+                    </label>
+                    <label>
+                        <input type="radio" name="comprehensionRating" value="5" required> 5 (Very easy)
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Did you learn something new ?</legend>
+                    <label>
+                        <input type="radio" name="learningRating" value="1" required> 1 (Learned nothing.)
+                    </label>
+                    <label>
+                        <input type="radio" name="learningRating" value="2" required> 2
+                    </label>
+                    <label>
+                        <input type="radio" name="learningRating" value="3" required> 3
+                    </label>
+                    <label>
+                        <input type="radio" name="learningRating" value="4" required> 4
+                    </label>
+                    <label>
+                        <input type="radio" name="learningRating" value="5" required> 5 (Learned alot.)
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Would you reference this site? :(Choose an Option):</legend>
+                    <select id="questionSelect" name="questionSelect" required>
+                        <option value="option1">Yes</option>
+                        <option value="option2">No</option>
+                    </select>
+                </fieldset>
+                <button type="submit">Submit Infomation</button>
+            </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; 2023 Pramit Patel</p>
+    </footer>
+</body>
+</html>
