@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Pramit Patel</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pramit Patel</h1>
+    </header>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Web Dev Concepts</h2>
+            <article>
+                <h3>Web Servers</h3>
+                <p>
+                    The term <strong>“index”</strong>, in relation to websites and servers, often refers to the default file sent to a client's browser when a specific <strong>URL</strong> is accessed. 
+                    It is typically the default resource dispatched in response to a client's <strong>HTTP request.</strong>
+                    For instance, when a user types in “http://www.example.com/,” the request fetches “/index.html” as it is the file from the root directory. 
+                    In many cases, <strong>the index.html</strong> serves as the website's main or home page, essentially acting as the gateway to the rest of the site's content. 
+                    Most web servers follow the convention of mapping "/" to "/index.html" as the default homepage. 
+                    For example, Apache (used by OSU Engineering) uses "index" as the default file, while Microsoft's .NET platform allows "default.html."
+                </p>
+                <p>
+                    Utilizing the Web Dev/Inspector tool reveals several differences between accessing the site through the web server or locally. 
+                    When examining the network tab locally, one observes a status code of 200, yet there are no tabs that display the method or domain. 
+                    It also provides a “failed status” for <strong>main.css</strong> and <strong>main.js</strong>, since those files do not exist locally. 
+                    In contrast, when using the web developer tool when accessing the resource on the web server, the network tab in chrome provides extensive information. 
+                    The tools reveal the HTTP GET method used to request the file, as well as the domain.
+                    In regard, to <strong>HTTP request headers</strong> in the network tab there are no HTTP request headers, but there is an HTTP response header, which shows the "content-type: text/html". The request header tells the browser the format of the resource. 
+                    Whereas, for the web server, the <strong>HTTP request header</strong> indicates the different types of data the client can handle. On the web server, it shows several formats from the “Accept” header, such as text/html, application/xhtml+xml, application/xml, image/avif, image/webp, and /;q=0.8.
+                    Similarly, the <strong>HTTP response header</strong> provides details such as content encoding (gzip), content length (1264 bytes), content type (text/html), server information (Apache/2.4.6). 
+                </p>
+                <p>
+                    The <strong>“favicon.ico”</strong> has a status code of 200 even though it does not exist locally since it default file that exists on OSU's servers, and is automatically added. 
+                    The CSS and JS files return a 404 status code which indicates “Not found”, which means the requested resource is not found on the server since they do not exist.
+                </p>
+                <p>
+                    A <strong>URL</strong> consists of several components: the <strong>scheme, subdomain, host domain and path or resource.</strong> First for the URL accessed on the web server, the <strong>scheme</strong> which is the “http://” this is the protocol that is used to access the resource. 
+                    The second part is the <strong>subdomain</strong> which is the “web.engr”, indicating that it is part of a subsection of the “oregonstate.edu” site. 
+                    The third part, which is the <strong>domain</strong>, which is going to be the “engr.oregonstate.edu”. 
+                    Lastly, the <strong>Path to Resource or resources</strong> is going to be “~patepram/a1-patepram” which indicates the specific resource in the directory.
+                 </p>
+            </article>
+            <article>
+                <h3>Frontend Design</h3>
+                <p>
+                    Frontend design is a crucial step in the web development process. 
+                    Its primary goal is to create the most appropriate experience for users. 
+                    This involves designing the user interface or <strong>UI</strong>, visual interface of the site, as well as the interactive experience. 
+                    The visual design aspect requires a consistent: color scheme, font, typography scheme, icon, illustration scheme, and navigation system. 
+                    Also, it relates to <strong>usability</strong> as it measures the quality of a user's experience when interacting with the system.
+                </p>
+                <dl>
+                    <dt><strong>Effective:</strong></dt>
+                    <dd>The design is successful in assisting users to meet their goals and producing accurate results. </dd>
+
+                    <dt><strong>Efficiency:</strong></dt>
+                    <dd>The design enables to perform tasks with the least number of steps involved and obtain results quickly. </dd>
+
+                    <dt><strong>Easy to Navigate:</strong></dt>
+                    <dd>The design is intuitive and allows for new users to easily navigate through the site, and enables them to understand how to locate their goals with ease</dd>
+
+                    <dt><strong>Error-free:</strong></dt>
+                    <dd>The design of the site avoids accessibility and availability issues by understanding and considering common errors created by users and planning accordingly to prevent them. </dd>
+
+                    <dt><strong>Enjoyable:</strong></dt>
+                    <dd>The design of the site is unique for its intended audience, and it provides an engaging experience for its users.</dd>
+                </dl>
+                <p>
+                    Page layout tags in HTML play a crucial role in structuring and organizing web page content. 
+                    Each tag serves a specific purpose in creating a well-designed and user-friendly layout. 
+                    The tags, including header, nav, main, section, article, aside, figure, blockquote, footer, and div, contribute to the overall structure and organization of the content. 
+                    The main tag holds the primary content, while section and article group related concepts. 
+                    Tags like aside, figure, blockquote, and footer provide additional functionality and styling to enhance accessibility and create an enjoyable user experience.
+                </p>
+                <ol>
+                    <li><strong>Linking to External content anchor:</strong> Utilizes the <q>a</q> tag that creates a hyperlink to external content. It utilizes “href" attribute which specifies the URL for the link. It creates a clickable link that directs users to the external content.</li>
+                    <li><strong>Linking to Internal content anchor:</strong> Links to sections within the same page by using the “href” attribute to set the ID of the target element.</li>
+                    <li><strong>Linking from Page-to-Page anchor:</strong> These page-to-page anchors are used to link pages within one the same website. It is often used to create navigational menus that guide users from one page to another. Also, it utilizes relative URLs with the href attribute to specify the target path to the same page.</li>
+                  </ol>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; 2023 Pramit Patel</p>
+    </footer>
+</body>
+</html>
