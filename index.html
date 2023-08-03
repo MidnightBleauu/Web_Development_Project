@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pramit Patel</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Pramit Patel</h1>
+    <h2>Web Dev Concepts</h2>
+    <p> 
+        The term “index,” in relation to websites and servers, often refers to the default file sent to a client's browser when a specific URL is accessed. 
+        It is typically the default resource dispatched in response to a client's HTTP request. 
+        For instance, when a user types in “http://www.example.com/,” the request fetches “/index.html” as it is the file from the root directory. 
+        In many cases, the index serves as the website's main or home page, essentially acting as the gateway to the rest of the site's content. 
+        Most web servers follow the convention of mapping "/" to "/index.html" as the default homepage. 
+        For example, Apache (used by OSU Engineering) uses "index" as the default file, while Microsoft's .NET platform allows "default.html."
+    </p>
+    <p>
+        Utilizing the Web Dev/Inspector tool reveals several differences between accessing the site through the web server or locally. 
+        When examining the network tab locally, one observes a status code of 200, yet there are no tabs that display the method or domain. 
+        It also provides a “failed status” for main.css and main.js, since those files do not exist locally. 
+        In contrast, when using the web developer tool when accessing the resource on the web server, the network tab in chrome provides extensive information. 
+        The tools reveal the HTTP GET method used to request the file, as well as the domain.
+        In regards, to HTTP request headers in the network tab there are no HTTP request headers but there is a HTTP response header, which shows the "content-type: text/html". The request header tells the browser the format of the resource. 
+        Whereas, for the web server, the HTTP request header indicates the different types of data the client can handle. On the web server, it shows several different formats from the "Accept" header, such as text/html, application/xhtml+xml, application/xml, image/avif, image/webp, and /;q=0.8.
+        Similarly, the HTTP response header provides details such as content encoding (gzip), content length (1264 bytes), content type (text/html), server information (Apache/2.4.6). 
+    </p>
+    <p>
+        The “favicon.ico” has a status code of 200 even though it does not exist locally since it default file that exists on OSU's servers, and is automatically added. 
+        The CSS and JS files return a 404 status code which indicates “Not found”, which means the requested resource is not found on the server since they do not exist.
+    <p>
+        A URL consists of several components: the scheme, subdomain, host domain and path or resource. First for the URL accessed on the web server, the scheme which is the “http://” this is the protocol that is used to access the resource. 
+        The second part is the subdomain which is the “web.engr”, indicating that it is part of a subsection of the “oregonstate.edu” site. 
+        The third part, which is the host domain, which is going to be the “engr.oregonstate.edu”. 
+        Lastly, the Path to Resource or resources is going to be “~patepram/a1-patepram” which indicates the specific resource in the directory.
+    </p>
+</body>
+</html>
