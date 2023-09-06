@@ -1,0 +1,65 @@
+### CREATE five documents.
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Cyberpunk 2077",
+    "year": 2020,
+    "genre": "RPG",
+    "publisher": "CD Projekt Red",
+    "completionDate": "01-15-21"
+}
+
+### CREATE 2
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Elden Ring",
+    "year": 2022,
+    "genre": "Action RPG",
+    "publisher": "FromSoftware",
+    "completionDate": "03-20-22"
+}
+
+### CREATE 3
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Final Fantasy XIV",
+    "year": 2023,
+    "genre": "RPG",
+    "publisher": "Square Enix",
+    "completionDate": "08-11-23"
+}
+
+### CREATE 4
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Spiderman Miles Morales",
+    "year": 2020,
+    "genre": "Action-Adventure",
+    "publisher": "Insomniac Games",
+    "completionDate": "02-15-20"
+}
+
+### CREATE 5
+POST http://localhost:3000/games HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Resident Evil 4: Remake",
+    "year": 2022,
+    "genre": "Survival Horror",
+    "publisher": "Capcom",
+    "completionDate": "06-08-22"
+}
+
+### Retrieve all 
+GET http://localhost:3000/games/ HTTP/1.1
+
+###Delete All 
+DELETE http://localhost:3000/games/64d95639542a4c93776423d6 HTTP/1.1
